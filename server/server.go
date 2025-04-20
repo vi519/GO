@@ -7,6 +7,7 @@ import (
 
 func myMessage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Hello, You are god damm right")
+	fmt.Fprintln(w, "Aapka request path hai:", r.URL.Path)
 
 }
 
